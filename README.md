@@ -12,3 +12,5 @@ Upscale your image resolution with this program. This program is written in Pyth
 
 # Usage
 > $ python3 waifu2x-cli.py path/your-batch-image/
+
+<img src="https://raw.githubusercontent.com/mrizkihidayat66/batch-image-upscaler-cli/master/images/screenshot.jpeg">
