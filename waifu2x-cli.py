@@ -15,9 +15,9 @@ img_list.sort()
 
 os.chdir(input_dir)
 if os.path.isdir(output_dir):
-    shutil.rmtree(output_dir)
-else:
-    os.mkdir(output_dir)
+    shutil.rmtree(output_dir, ignore_errors=True)
+
+os.mkdir(output_dir)
 
 i = 0
 while i < len(img_list):
@@ -38,7 +38,6 @@ while i < len(img_list):
         break
     else:
         img_link    = data["output_url"]
-
         wget.download(img_link, out=output_dir+"/upscaled_"+img_list[i])
 
     i += 1
